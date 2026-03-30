@@ -8,8 +8,8 @@ description = "Import Spotify CSV exports into YouTube Music"
 clap = { version = "4", features = ["derive"] }
 csv = "1"
 chrono = "0.4"
-reqwest = { version = "0.12", features = ["json", "cookies"] }
+reqwest = { version = "0.13", features = ["json", "cookies"] }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
-sha1 = "0.10"
+sha1 = "0.11"
 tokio = { version = "1", features = ["full"] }
