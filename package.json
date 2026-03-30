@@ -1,0 +1,13 @@
+{
+  "name": "spotify-to-ytmusic",
+  "private": true,
+  "packageManager": "pnpm@10.31.0",
+  "scripts": {
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test"
+  },
+  "devDependencies": {
+    "turbo": "^2"
+  }
+}

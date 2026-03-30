@@ -1,0 +1,15 @@
+[package]
+name = "spotify-to-ytmusic"
+version = "0.1.0"
+edition = "2021"
+description = "Import Spotify CSV exports into YouTube Music"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+csv = "1"
+chrono = "0.4"
+reqwest = { version = "0.12", features = ["json", "cookies"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha1 = "0.10"
+tokio = { version = "1", features = ["full"] }

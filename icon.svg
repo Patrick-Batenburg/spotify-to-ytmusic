@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <clipPath id="leftHalf">
+      <rect x="0" y="0" width="64" height="128"/>
+    </clipPath>
+    <clipPath id="rightHalf">
+      <rect x="64" y="0" width="64" height="128"/>
+    </clipPath>
+  </defs>
+  <!-- Single circle, split colors -->
+  <circle cx="64" cy="64" r="56" fill="#1DB954" clip-path="url(#leftHalf)"/>
+  <circle cx="64" cy="64" r="56" fill="#FF0000" clip-path="url(#rightHalf)"/>
+  <!-- Divider line -->
+  <line x1="64" y1="8" x2="64" y2="120" stroke="#0f0f1a" stroke-width="3"/>
+  <!-- Spotify waves (left) -->
+  <path d="M28 48c10-4 16-4 28 0" stroke="#fff" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.9"/>
+  <path d="M32 58c7-3 12-3 22 0" stroke="#fff" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.9"/>
+  <path d="M36 68c5-2 8-2 16 0" stroke="#fff" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.9"/>
+  <!-- Play triangle (right) -->
+  <polygon points="76,46 76,82 104,64" fill="#fff" opacity="0.9"/>
+  <!-- Subtle arrow at bottom -->
+  <path d="M44 92L84 92" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M79 87L86 92L79 97" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.6"/>
+</svg>

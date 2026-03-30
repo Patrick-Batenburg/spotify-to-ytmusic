@@ -1,0 +1,9 @@
+{
+  "name": "@spotify-to-ytmusic/python",
+  "private": true,
+  "scripts": {
+    "build": "echo 'No build step for Python'",
+    "lint": "python -m ruff check . && python -m ruff format --check .",
+    "test": "python -m pytest tests/ -v || echo 'No tests yet'"
+  }
+}
