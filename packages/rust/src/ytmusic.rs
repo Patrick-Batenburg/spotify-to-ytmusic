@@ -58,7 +58,8 @@ impl YTMusic {
 
         let mut hasher = Sha1::new();
         hasher.update(auth_string.as_bytes());
-        let hash = format!("{:x}", hasher.finalize());
+        let digest = hasher.finalize();
+        let hash = digest.iter().map(|b| format!("{:02x}", b)).collect::<String>();
 
         format!("SAPISIDHASH {}_{}", timestamp, hash)
     }
